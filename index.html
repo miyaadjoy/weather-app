@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>weather app</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- weather search box -->
+        <div class="weather-search">
+            <!-- logo -->
+            <div class="weather-logo"><i class="fa-solid fa-cloud"></i></div>
+            <!-- search box -->
+            <div class="weather-search-box">
+                <input type="text" placeholder="enter city" class="search" />
+                <button class="search-btn"><i class="fa-solid fa-search"></i></button>
+            </div>
+
+        </div>
+
+        <!-- weather info -->
+        <div class="weather-info hide">
+            <!-- weather location -->
+            <div class="weather-location">
+                <span class="location"></span>
+            </div>
+
+
+            <!-- weather image -->
+            <img class="weather-image" src="images/partially_cloudy.png">
+
+
+        </div>
+
+        
+        <!-- weather details -->
+
+        <div class="weather-details hide">
+            <!-- weather temperature -->
+            <div class="weather-temp ">
+                <span class="temperature"></span><span> &#8451</span>
+            </div>
+    
+            <!-- weather condition -->
+            <div class="weather-condition ">
+                <span class="condition"></span>
+            </div>
+    
+            <!-- weather description -->
+            <div class="weather-desc ">
+    
+                <!-- weather breeze -->
+                <div class="weather-wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="wind"></span>km/h
+                </div>
+    
+                <!-- weather humidity -->
+                <div class="weather-humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span class="humidity"></span>%
+                </div>
+    
+    
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
